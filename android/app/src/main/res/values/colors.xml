@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#075E54</color>
+    <color name="primary_dark">#054D44</color>
+    <color name="accent">#25D366</color>
+    <color name="background">#FFFFFF</color>
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#757575</color>
+    <color name="entrada">#25D366</color>
+    <color name="saida">#FF4444</color>
+    <color name="status_bar">#075E54</color>
+    <color name="navigation_bar">#075E54</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
