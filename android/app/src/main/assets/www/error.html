@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Erro - Controle Financeiro</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .error-container {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 80%;
+        }
+        .error-icon {
+            font-size: 48px;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            color: #075E54;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        .retry-button {
+            background-color: #075E54;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .retry-button:hover {
+            background-color: #054D44;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-icon">⚠️</div>
+        <h1>Ops! Algo deu errado</h1>
+        <p>Não foi possível carregar o aplicativo. Verifique sua conexão com a internet e tente novamente.</p>
+        <button class="retry-button" onclick="window.location.reload()">Tentar Novamente</button>
+    </div>
+    <script>
+        // Add touch feedback for the button
+        document.querySelector('.retry-button').addEventListener('touchstart', function(e) {
+            this.style.opacity = '0.8';
+        });
+        document.querySelector('.retry-button').addEventListener('touchend', function(e) {
+            this.style.opacity = '1';
+        });
+    </script>
+</body>
+</html>
